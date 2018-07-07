@@ -1,5 +1,5 @@
 
-"Hello World" 
+"Hello World" Need a header up here
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,6 +9,8 @@
         <title>Karnrage Github Page</title>  
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 
@@ -18,8 +20,12 @@
     <body>
         
         <div class="jumbotron text-center">
-                <h1>Hello, You Have Come To My Web Page</h1>
-                <p>I am a Chicago residing, web developer and mechanical engineer</p> 
+                <h2>Hello, You Have Come To My Web Page</h2>
+                <p>I am a Chicago residing, web developer and mechanical engineer</p>
+                <p><a href="https://github.com/karnrage">Click Here for my GitHub </a></p>
+                <p>and</p> 
+                <p><a href="https://www.linkedin.com/in/kamal-kauldhar-012b13">Click Here for my LinkedIn </a></p> 
+                
         </div>
 
         <div class="container-fluid">                
@@ -46,14 +52,97 @@
 
         <div class="container-fluid">                
             <div class="row">
-                <div class="col-sm-4">
-                <h3>Full-Stack JavaScript (MongoDB (noSQL), Express.js, Angular, and Node.js)</h3>
-                <p>Marketplace application</p>
-                <p>Started from the back-end, I learned how a document-oriented database with JSON schemas differed from the tabular relations used in relational databases</p>
+                <div class="col-md-12">
+                <h3 class="text-info">Full-Stack JavaScript (MongoDB (noSQL), Express.js, Angular, and Node.js)</h3>
+                    <h2 class="text-center text-success">Marketplace application</h2>
+                <p class="col-md-12">Created a fully working application with CRUD functionality</p>
+                    <div class="col-md-offset-1">
+                        <p>- Starts with the user is able to create and read items for sale</p>
+                        <p>- Depending on create or read, this would cause the controller to run a query to either read or create a DB collection</p>
+                        <p>- Data is collected and sent through the pipeline to the front, where it is printed as an array</p>
+                    </div>    
+                <p class="col-md-12">Started from the back-end, I learned how a document-oriented database with JSON schemas differed from the tabular relations used in relational databases</p>
+                    <div class="col-md-offset-1">
+                       <p>- Created my object</p>
+                       <p>- Built out the controller in tandem with the front-end to reduce errors, and have easier bug fixing</p>
+                    </div>
+                <p class="col-md-12">After being able to create or read the data from Mongo the next steps were to build the update data functionality</p>
+                    <p class="col-md-offset-1">
+                        - Used embedded JavaScript (EJS) to build sample apps. Later dropped EJS to use Angular
+                    </p>
+                <p class="col-md-12">Last step is to destroy any listing, limited if the user created the listing</p>
+                    <p class="col-md-offset-1">
+                        - Data is queried, once located the data is erased
+                    </p>
+                <p class="col-md-12">Next I was challenged by Angular 2+ framework</p>
+                    <div class="col-md-offset-1">
+                        <p>- Know how to build single page applications (SPA)</p>
+                        <p>- Learned the importance of just refreshing the changed data on the client-side rather than wastefully resending data that is the same</p>
+                        <p>- Know how to build components to build the project architecture</p>
+                    </div>
+                <h4 class="col-md-12 text-center text-success">Next step is to deploy through AWS</h4>
                 </div>
             </div>
         </div>
 
+        <div class="container-fluid">                
+                <div class="row">
+                    <div class="col-md-12">
+                    <h3 class="text-info">ASP.NET Core (C#)</h3>
+                        <h2 class="text-center text-success">Bidding application</h2>
+                    <p class="col-md-12">Again, created a fully working application with CRUD functionality. Conventional MVC architecture</p>
+                        <div class="col-md-offset-1">                            
+                            <p>- Able to use Entity Framework to connect directly to database</p>
+                                <div class="col-md-offset-1"><p>- Also capable with Dapper</p></div>
+                            <p>- Used pgAdmin 4 to manage PostgreSQL</p>
+                            <p>- Able to use RAZOR to write C# in the template</p>
+                            <p>- Setup the forms for user input and object creation</p>
+                            <p>- Was challenged by formatting datetime. RAZOR was valuable</p>                            
+                        </div>    
+                    <p class="col-md-12">Started from the back-end, created tabular relations. Next created the forms on the front-end</p>
+                        <div class="col-md-offset-1">
+                           <p>- Wrote dynamic forms which are updated with latest database data to take in user input</p>
+                           <p>- Tied the form and controller action together to get specified output</p>
+                           <p>- Connected controller routes to links, and setup algorithms to handle data depending on conditions</p>
+                        </div>
+                    <p class="col-md-12">Appreciated the value of routing in the .NET Core stack versus MEAN</p>
+                        <div class="col-md-offset-1">
+                            <p>- Know how to separate each category of MVC per each MVC family</p>
+                            <p>- Learned LINQ and its strength and ease</p>
+                        </div>
+                   <h4 class="col-md-12 text-center text-success"> Next would be Azure deployment, also created Login and Registration application</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">                
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h3 class="text-info">Django (Python)</h3>
+                            <div class="col-md-offset-1"><p>- Also capable with Flask</p></div>
+                            <h2 class="text-center text-success">Login and Registration</h2>
+                        <p class="col-md-12">Application with CRUD functionality. MVC architecture</p>
+                            <div class="col-md-offset-1">                            
+                                <p>- Able to use ORM (object relational mapper) to connect to database</p>
+                                <p>- Able to use the Jinja template engine</p>
+                                <p>- Setup the forms for user input and object creation</p>                            
+                            </div>    
+                        <p class="col-md-12">Started from the front-end. Next created the object once ready with what the object would consist of</p>
+                            <div class="col-md-offset-1">
+                               <p>- Created algorithms to handle decisions depending on correctness of input</p>
+                               <p>- Would use form validation</p>
+                               <p>- User would be able to login if they registered correctly</p>
+                               <p>- User is presented with error messages, if needed</p>
+                            </div>
+                        <p class="col-md-12">Appreciated the value of using Django from Flask</p>
+                            <div class="col-md-offset-1">
+                                <p>- Will show user error messages if user tries to go to an unauthorized URL</p>
+                                <p>- Able to show successful index page/dashboad after login</p>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
 
 
     <!-- Plugins for: jQuery (must come first), then Popper.js, and then our (bootstraps) JavaScript plugins. -->
@@ -63,3 +152,21 @@
     </body>
 </html>
 
+<!-- <p class="col-md-12">Installed and used Node.js</p>
+<div class="col-md-offset-1">
+    <p>- Took advantage of the convenience of using one language from the front to the back</p>
+</div>    
+<p class="col-md-12">Started from the back-end, I learned how a document-oriented database with JSON schemas differed from the tabular relations used in relational databases</p>
+<p class="col-md-offset-1">
+   - Exercised with MongoDB though the terminal and PowerShell
+</p>
+<p class="col-md-12">After working with MongoDB then I next integrated the express web app framework so I could start building out the application</p>
+<p class="col-md-offset-1">
+    - Used embedded JavaScript (EJS) to build sample apps. Later dropped EJS to use Angular
+</p>
+<p class="col-md-12">Next I was challenged by being introduced into the Angular 2+ framework</p>
+<div class="col-md-offset-1">
+    <p>- Learned how to build single page applications (SPA)</p>
+    <p>- Learned the importance of just refreshing the changed data on the client-side rather than wastefully resending data that is the same</p>
+    <p>- Know how to build components to build the project architecture</p>
+</div> -->
