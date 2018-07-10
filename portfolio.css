@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to left top, white, #8BEE56,gray) fixed;
+  }
+  
+.fitting{
+    width: 300px;
+	margin-top: 20px;
+	margin-left: 25px;
+	padding:25px;
+    display: inline-block;
+	vertical-align: top;
+	box-shadow: 2px 2px 6px black;
+}
+
+.centered {
+    position: absolute;
+    width: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brightText{
+    color: white;
+}
+
+ul#links li {
+    display:inline;
+}

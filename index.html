@@ -1,5 +1,5 @@
 
-"Hello World" Need a header up here
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,7 +10,8 @@
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
 
@@ -18,14 +19,23 @@
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     </head>
     <body>
+
+            <ul id="links">
+                    <li><a href="https://github.com/karnrage">| Click Here for my GitHub | </a></li>
+                    <li><a href="https://www.linkedin.com/in/kamal-kauldhar-012b13">| Click Here for my LinkedIn | </a></li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+            </ul> 
         
         <div class="jumbotron text-center">
-                <h2>Hello, You Have Come To My Web Page</h2>
-                <p>I am a Chicago residing, web developer and mechanical engineer</p>
-                <p><a href="https://github.com/karnrage">Click Here for my GitHub </a></p>
-                <p>and</p> 
-                <p><a href="https://www.linkedin.com/in/kamal-kauldhar-012b13">Click Here for my LinkedIn </a></p> 
-                
+                <img src="images/Last-Viper.jpg" alt="antigravity viper" style="width:100%;transform-style: preserve-3d;">
+                    <div class="centered">
+                        <h2 class="brightText">Hello, You Have Come To My Web Page</h2>
+                        <p class="brightText">I am a Chicago residing, web developer and mechanical engineer</p>
+                        <p class="brightText"><a class="btn btn-primary active" href="https://github.com/karnrage">Click Here for my GitHub </a></p>
+                        <p class="brightText">and</p> 
+                        <p class="brightText"><a class="btn btn-primary active" href="https://www.linkedin.com/in/kamal-kauldhar-012b13">Click Here for my LinkedIn </a></p> 
+                    </div>    
         </div>
 
         <div class="container-fluid">                
@@ -50,10 +60,14 @@
         <!--</div> -->
         </div>
 
-        <div class="container-fluid">                
+        <div class="container-fluid"> 
             <div class="row">
                 <div class="col-md-12">
                 <h3 class="text-info">Full-Stack JavaScript (MongoDB (noSQL), Express.js, Angular, and Node.js)</h3>
+                    <img src="images/bikeMarket login-register page.png" class="fitting" alt="clip of landing page">  
+                    <img src="images/bikeMarket listings page.png" class="fitting" alt="clip of listing page">  
+                    <img src="images/bikeMarket create-edit page.png" class="fitting" alt="clip of create/edit page">  
+                    
                     <h2 class="text-center text-success">Marketplace application</h2>
                 <p class="col-md-12">Created a fully working application with CRUD functionality</p>
                     <div class="col-md-offset-1">
@@ -144,7 +158,15 @@
                     </div>
                 </div>
 
-
+                $( document ).ready(function() {
+                    
+                       $( "p" ).click(function( event ) {
+                    
+                           alert( "Thanks for visiting!" );
+                    
+                       });
+                    
+                   });
     <!-- Plugins for: jQuery (must come first), then Popper.js, and then our (bootstraps) JavaScript plugins. -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
