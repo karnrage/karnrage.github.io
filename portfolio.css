@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to left top, white, #8BEE56,gray) fixed;
+    background-color: black;
+    /* background: linear-gradient(to left top, white, #8BEE56,gray) fixed; */
   }
   
 .fitting{
@@ -27,3 +28,19 @@ body {
 ul#links li {
     display:inline;
 }
+
+p{
+    color:white;
+}
+h3 {
+    font-size: 62px;
+    background: -webkit-linear-gradient( #eee,#333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.niceLook {
+    font-size: 32px;
+    background: -webkit-linear-gradient( #333,#eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

@@ -21,10 +21,9 @@
     <body>
 
             <ul id="links">
-                    <li><a href="https://github.com/karnrage">| Click Here for my GitHub | </a></li>
-                    <li><a href="https://www.linkedin.com/in/kamal-kauldhar-012b13">| Click Here for my LinkedIn | </a></li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
+                    <li><a id="top" href="https://github.com/karnrage" >| Click Here for my GitHub | </a></li>
+                    <li><a id="top2" href="https://www.linkedin.com/in/kamal-kauldhar-012b13" >| Click Here for my LinkedIn | </a></li>
+                   
             </ul> 
         
         <div class="jumbotron text-center">
@@ -32,9 +31,10 @@
                     <div class="centered">
                         <h2 class="brightText">Hello, You Have Come To My Web Page</h2>
                         <p class="brightText">I am a Chicago residing, web developer and mechanical engineer</p>
-                        <p class="brightText"><a class="btn btn-primary active" href="https://github.com/karnrage">Click Here for my GitHub </a></p>
-                        <p class="brightText">and</p> 
-                        <p class="brightText"><a class="btn btn-primary active" href="https://www.linkedin.com/in/kamal-kauldhar-012b13">Click Here for my LinkedIn </a></p> 
+                        <p class="brightText"><a class="btn btn-primary active" href="https://github.com/karnrage"target="_blank">Click Here for my GitHub </a></p>
+                        <p style="color:black;">-</p> 
+                        <p class="brightText"><a class="btn btn-primary active" href="https://www.linkedin.com/in/kamal-kauldhar-012b13"target="_blank">Click Here for my LinkedIn </a></p> 
+                        <div class="niceLook">This, the background pic, was my last test drive</div>
                     </div>    
         </div>
 
@@ -63,7 +63,8 @@
         <div class="container-fluid"> 
             <div class="row">
                 <div class="col-md-12">
-                <h3 class="text-info">Full-Stack JavaScript (MongoDB (noSQL), Express.js, Angular, and Node.js)</h3>
+                <h3 class="text-info">Full-Stack JavaScript (MEAN Stack)</h3>
+                    <p class="niceLook">(MongoDB (noSQL), Express.js, Angular, and Node.js)</p>
                     <img src="images/bikeMarket login-register page.png" class="fitting" alt="clip of landing page">  
                     <img src="images/bikeMarket listings page.png" class="fitting" alt="clip of listing page">  
                     <img src="images/bikeMarket create-edit page.png" class="fitting" alt="clip of create/edit page">  
@@ -158,15 +159,25 @@
                     </div>
                 </div>
 
-                $( document ).ready(function() {
-                    
-                       $( "p" ).click(function( event ) {
-                    
-                           alert( "Thanks for visiting!" );
-                    
-                       });
-                    
-                   });
+                <script>
+                $( document ).ready(function() {                    
+                                         
+                        // event.preventDefault();
+                                             
+                    $( "a[id^='top']").click(function( event ) {                  
+                        
+                        $( this ).hide( "slow" );
+                     
+                    });
+                    $( "a[id^='top2']").click(function( event ) {                  
+                        
+                        $( this ).hide( "slow" );
+                     
+                    });            
+                        
+                });
+              
+                </script>
     <!-- Plugins for: jQuery (must come first), then Popper.js, and then our (bootstraps) JavaScript plugins. -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
