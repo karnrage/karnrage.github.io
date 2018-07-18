@@ -23,6 +23,7 @@ body {
 
 .brightText{
     color: white;
+    text-shadow: 4px 4px 4px black;
 }
 
 ul#links li {
