@@ -40,6 +40,7 @@ h3 {
     -webkit-text-fill-color: transparent;
   }
 .niceLook {
+    /* width: 900px; */
     font-size: 32px;
     background: -webkit-linear-gradient( #1F25CB,#8B20C1, orange);
     -webkit-background-clip: text;
